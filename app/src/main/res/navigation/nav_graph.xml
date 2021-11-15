@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/writers">
+
+    <fragment
+        android:id="@+id/writers"
+        android:name="com.projects.writers.fragments.WritersFragment"
+        android:label="fragment_writers"
+        tools:layout="@layout/fragment_writers" >
+        <action
+            android:id="@+id/action_writers_to_writerFragment"
+            app:destination="@id/writerFragment" />
+        <action
+            android:id="@+id/action_writers_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/saved"
+        android:name="com.projects.writers.fragments.SavedFragment"
+        android:label="fragment_saved"
+        tools:layout="@layout/fragment_saved" >
+        <action
+            android:id="@+id/action_saved_to_writerFragment"
+            app:destination="@id/writerFragment" />
+        <action
+            android:id="@+id/action_saved_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.projects.writers.fragments.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_settings_to_addWriterFragment"
+            app:destination="@id/addWriterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addWriterFragment"
+        android:name="com.projects.writers.fragments.AddWriterFragment"
+        android:label="fragment_add_writer"
+        tools:layout="@layout/fragment_add_writer" />
+    <fragment
+        android:id="@+id/writerFragment"
+        android:name="com.projects.writers.fragments.WriterFragment"
+        android:label="WriterFragment"
+        tools:layout="@layout/fragment_writer" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.projects.writers.fragments.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_writerFragment"
+            app:destination="@id/writerFragment" />
+    </fragment>
+</navigation>

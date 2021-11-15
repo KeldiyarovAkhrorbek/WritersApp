@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/writers"
+        android:icon="@drawable/ic_menu_writers"
+        android:title="Adiblar" />
+
+    <item
+        android:id="@+id/saved"
+        android:icon="@drawable/ic_menu_saved"
+        android:title="Saqlangan" />
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_menu_settings"
+        android:title="Sozlamalar" />
+</menu>

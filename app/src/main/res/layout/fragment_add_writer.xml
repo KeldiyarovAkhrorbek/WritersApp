@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".fragments.AddWriterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_4sdp">
+
+        <TextView
+            android:id="@+id/settings_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="@font/font"
+            android:text="Adib qo'shish"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_25sdp" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/choose_image"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:cardBackgroundColor="#00B238"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:rippleColor="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/font"
+                android:text="Adib rasmini tanlash"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp" />
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <EditText
+            android:id="@+id/ed_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/edit_shape"
+            android:hint="Adib ismi, familiyasi va otasining ismi"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/ed_birthYear"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/edit_shape"
+            android:hint="Tug’ilgan yili"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/ed_death_Year"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/edit_shape"
+            android:hint="Vafot etgan yili"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/black" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/edit_shape">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:entries="@array/for_spinner"
+                android:spinnerMode="dropdown" />
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/ed_info"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/edit_shape"
+            android:gravity="top"
+            android:hint="Adib haqida to’liq ma’lumot"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/black" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/save_btn"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="right"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:cardBackgroundColor="#00B238"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:rippleColor="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/font"
+                android:text="Saqlash"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp" />
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
